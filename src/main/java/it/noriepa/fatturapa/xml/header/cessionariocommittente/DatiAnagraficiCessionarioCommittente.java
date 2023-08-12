@@ -8,21 +8,21 @@ import it.noriepa.fatturapa.xml.header.cedenteprestatore.IdFiscaleIVA;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Optional;
 
-public class DatiAnagrafici {
+public class DatiAnagraficiCessionarioCommittente {
 
     private Optional<IdFiscaleIVA> idFiscaleIVA;
     private Optional<String> codiceFiscale;
     private Anagrafica anagrafica;
     private RegimeFiscaleType regimeFiscale;
-    public DatiAnagrafici(){}
+    public DatiAnagraficiCessionarioCommittente(){}
 
-    public DatiAnagrafici(Optional<IdFiscaleIVA> idFiscaleIVA, Optional<String> codiceFiscale, Anagrafica anagrafica, Optional<String> alboProfessionale, Optional<String> provinciaAlbo, Optional<String> numeroIscrizioneAlbo, Optional<XMLGregorianCalendar> dataIscrizioneAlbo, RegimeFiscaleType regimeFiscale) {
+    public DatiAnagraficiCessionarioCommittente(Optional<IdFiscaleIVA> idFiscaleIVA, Optional<String> codiceFiscale, Anagrafica anagrafica, Optional<String> alboProfessionale, Optional<String> provinciaAlbo, Optional<String> numeroIscrizioneAlbo, Optional<XMLGregorianCalendar> dataIscrizioneAlbo, RegimeFiscaleType regimeFiscale) {
         this.idFiscaleIVA = idFiscaleIVA;
         this.codiceFiscale = codiceFiscale;
         this.anagrafica = anagrafica;
     }
 
-    public DatiAnagrafici(Optional<IdFiscaleIVA> idFiscaleIVA, Anagrafica anagrafica) {
+    public DatiAnagraficiCessionarioCommittente(Optional<IdFiscaleIVA> idFiscaleIVA, Anagrafica anagrafica) {
         this.idFiscaleIVA = idFiscaleIVA;
         this.anagrafica = anagrafica;
     }

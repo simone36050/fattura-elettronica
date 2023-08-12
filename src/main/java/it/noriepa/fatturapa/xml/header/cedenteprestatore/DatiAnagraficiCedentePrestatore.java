@@ -6,7 +6,7 @@ import it.noriepa.fatturapa.jaxb.RegimeFiscaleType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Optional;
 
-public class DatiAnagrafici {
+public class DatiAnagraficiCedentePrestatore {
     private IdFiscaleIVA idFiscaleIVA;
     private Optional<String> codiceFiscale;
     private Anagrafica anagrafica;
@@ -16,9 +16,9 @@ public class DatiAnagrafici {
     private Optional<XMLGregorianCalendar> dataIscrizioneAlbo;
     private RegimeFiscaleType regimeFiscale;
 
-    public DatiAnagrafici(){}
+    public DatiAnagraficiCedentePrestatore(){}
 
-    public DatiAnagrafici(IdFiscaleIVA idFiscaleIVA, Optional<String> codiceFiscale, Anagrafica anagrafica, Optional<String> alboProfessionale, Optional<String> provinciaAlbo, Optional<String> numeroIscrizioneAlbo, Optional<XMLGregorianCalendar> dataIscrizioneAlbo, RegimeFiscaleType regimeFiscale) {
+    public DatiAnagraficiCedentePrestatore(IdFiscaleIVA idFiscaleIVA, Optional<String> codiceFiscale, Anagrafica anagrafica, Optional<String> alboProfessionale, Optional<String> provinciaAlbo, Optional<String> numeroIscrizioneAlbo, Optional<XMLGregorianCalendar> dataIscrizioneAlbo, RegimeFiscaleType regimeFiscale) {
         this.idFiscaleIVA = idFiscaleIVA;
         this.codiceFiscale = codiceFiscale;
         this.anagrafica = anagrafica;
@@ -29,7 +29,7 @@ public class DatiAnagrafici {
         this.regimeFiscale = regimeFiscale;
     }
 
-    public DatiAnagrafici(IdFiscaleIVA idFiscaleIVA, Anagrafica anagrafica, RegimeFiscaleType regimeFiscale) {
+    public DatiAnagraficiCedentePrestatore(IdFiscaleIVA idFiscaleIVA, Anagrafica anagrafica, RegimeFiscaleType regimeFiscale) {
         this.idFiscaleIVA = idFiscaleIVA;
         this.anagrafica = anagrafica;
         this.regimeFiscale = regimeFiscale;

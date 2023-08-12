@@ -7,19 +7,19 @@ import java.util.Optional;
 
 public class CessionarioCommittente {
 
-    private DatiAnagrafici datiAnagrafici;
-    private Sede sede;
+    private DatiAnagraficiCessionarioCommittente datiAnagrafici;
+    private SedeCessionarioCommittente sede;
     private Optional<StabileOrganizzazione> stabileOrganizzazione;
     private Optional<RappresentanteFiscale> rappresentanteFiscale;
 
     public CessionarioCommittente(){}
 
-    public CessionarioCommittente(DatiAnagrafici datiAnagrafici, Sede sede) {
+    public CessionarioCommittente(DatiAnagraficiCessionarioCommittente datiAnagrafici, SedeCessionarioCommittente sede) {
         this.datiAnagrafici = datiAnagrafici;
         this.sede = sede;
     }
 
-    public CessionarioCommittente(DatiAnagrafici datiAnagrafici, Sede sede, Optional<StabileOrganizzazione> stabileOrganizzazione, Optional<RappresentanteFiscale> rappresentanteFiscale) {
+    public CessionarioCommittente(DatiAnagraficiCessionarioCommittente datiAnagrafici, SedeCessionarioCommittente sede, Optional<StabileOrganizzazione> stabileOrganizzazione, Optional<RappresentanteFiscale> rappresentanteFiscale) {
         this.datiAnagrafici = datiAnagrafici;
         this.sede = sede;
         this.stabileOrganizzazione = stabileOrganizzazione;
@@ -27,19 +27,19 @@ public class CessionarioCommittente {
     }
 
 
-    public DatiAnagrafici getDatiAnagrafici() {
+    public DatiAnagraficiCessionarioCommittente getDatiAnagrafici() {
         return datiAnagrafici;
     }
 
-    public void setDatiAnagrafici(DatiAnagrafici datiAnagrafici) {
+    public void setDatiAnagrafici(DatiAnagraficiCessionarioCommittente datiAnagrafici) {
         this.datiAnagrafici = datiAnagrafici;
     }
 
-    public Sede getSede() {
+    public SedeCessionarioCommittente getSede() {
         return sede;
     }
 
-    public void setSede(Sede sede) {
+    public void setSede(SedeCessionarioCommittente sede) {
         this.sede = sede;
     }
 

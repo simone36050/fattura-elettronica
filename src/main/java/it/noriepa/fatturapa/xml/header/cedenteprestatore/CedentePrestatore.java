@@ -6,19 +6,19 @@ import java.util.Optional;
 
 public class CedentePrestatore {
 
-    private DatiAnagrafici datiAnagrafici;
-    private Sede sede;
+    private DatiAnagraficiCedentePrestatore datiAnagrafici;
+    private SedeCedentePrestatore sede;
     private Optional<StabileOrganizzazione> stabileOrganizzazione;
     private Optional<IscrizioneREA> iscrizioneREA;
     private Optional<Contatti> contatti;
     private Optional<String> riferimentoAmministrazione;
 
-    public CedentePrestatore(DatiAnagrafici datiAnagrafici, Sede sede) {
+    public CedentePrestatore(DatiAnagraficiCedentePrestatore datiAnagrafici, SedeCedentePrestatore sede) {
         this.datiAnagrafici = datiAnagrafici;
         this.sede = sede;
     }
 
-    public CedentePrestatore(DatiAnagrafici datiAnagrafici, Sede sede, Optional<StabileOrganizzazione> stabileOrganizzazione, Optional<IscrizioneREA> iscrizioneREA, Optional<Contatti> contatti, Optional<String> riferimentoAmministrazione) {
+    public CedentePrestatore(DatiAnagraficiCedentePrestatore datiAnagrafici, SedeCedentePrestatore sede, Optional<StabileOrganizzazione> stabileOrganizzazione, Optional<IscrizioneREA> iscrizioneREA, Optional<Contatti> contatti, Optional<String> riferimentoAmministrazione) {
         this.datiAnagrafici = datiAnagrafici;
         this.sede = sede;
         this.stabileOrganizzazione = stabileOrganizzazione;
@@ -27,19 +27,19 @@ public class CedentePrestatore {
         this.riferimentoAmministrazione = riferimentoAmministrazione;
     }
 
-    public DatiAnagrafici getDatiAnagrafici() {
+    public DatiAnagraficiCedentePrestatore getDatiAnagrafici() {
         return datiAnagrafici;
     }
 
-    public void setDatiAnagrafici(DatiAnagrafici datiAnagrafici) {
+    public void setDatiAnagrafici(DatiAnagraficiCedentePrestatore datiAnagrafici) {
         this.datiAnagrafici = datiAnagrafici;
     }
 
-    public Sede getSede() {
+    public SedeCedentePrestatore getSede() {
         return sede;
     }
 
-    public void setSede(Sede sede) {
+    public void setSede(SedeCedentePrestatore sede) {
         this.sede = sede;
     }
 

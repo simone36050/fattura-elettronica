@@ -13,10 +13,12 @@ import it.noriepa.fatturapa.xml.body.datipagamento.DettaglioPagamento;
 import it.noriepa.fatturapa.xml.header.FatturaElettronicaHeader;
 import it.noriepa.fatturapa.xml.header.cedenteprestatore.Anagrafica;
 import it.noriepa.fatturapa.xml.header.cedenteprestatore.CedentePrestatore;
-import it.noriepa.fatturapa.xml.header.cedenteprestatore.DatiAnagrafici;
-import it.noriepa.fatturapa.xml.header.cedenteprestatore.Sede;
+import it.noriepa.fatturapa.xml.header.cedenteprestatore.DatiAnagraficiCedentePrestatore;
+import it.noriepa.fatturapa.xml.header.cedenteprestatore.SedeCedentePrestatore;
 import it.noriepa.fatturapa.xml.header.cedenteprestatore.IdFiscaleIVA;
 import it.noriepa.fatturapa.xml.header.cessionariocommittente.CessionarioCommittente;
+import it.noriepa.fatturapa.xml.header.cessionariocommittente.DatiAnagraficiCessionarioCommittente;
+import it.noriepa.fatturapa.xml.header.cessionariocommittente.SedeCessionarioCommittente;
 import it.noriepa.fatturapa.xml.header.datitrasmissione.DatiTrasmissione;
 import it.noriepa.fatturapa.xml.header.datitrasmissione.IdTrasmittente;
 
@@ -87,13 +89,13 @@ public class Main {
 
     /*<CedentePrestatore>*/
     public static CedentePrestatore setCedentePrestatore(){
-        DatiAnagrafici datiAnagrafici = new DatiAnagrafici();
+        DatiAnagraficiCedentePrestatore datiAnagrafici = new DatiAnagraficiCedentePrestatore();
         Anagrafica anagrafica = new Anagrafica();
         anagrafica.setDenominazione(Optional.of("ALPHA SRL"));
         datiAnagrafici.setAnagrafica(anagrafica);
         datiAnagrafici.setRegimeFiscale(RegimeFiscaleType.RF_19);
         datiAnagrafici.setIdFiscaleIVA(new IdFiscaleIVA("IT","01234567890"));
-        Sede sede = new Sede();
+        SedeCedentePrestatore sede = new SedeCedentePrestatore();
         sede.setIndirizzo("VIALE ROMA 543");
         sede.setCap("07100");
         sede.setNazione("IT");
@@ -107,12 +109,12 @@ public class Main {
 
     /*<CessionarioCommittente>*/
     public static CessionarioCommittente setCessionarioCommittente(){
-        it.noriepa.fatturapa.xml.header.cessionariocommittente.DatiAnagrafici datiAnagrafici = new  it.noriepa.fatturapa.xml.header.cessionariocommittente.DatiAnagrafici();
+        DatiAnagraficiCessionarioCommittente datiAnagrafici = new DatiAnagraficiCessionarioCommittente();
         datiAnagrafici.setCodiceFiscale(Optional.of("09876543210"));
         Anagrafica anagrafica = new Anagrafica();
         anagrafica.setDenominazione(Optional.of("AMMINISTRAZIONE BETA"));
         datiAnagrafici.setAnagrafica(anagrafica);
-        it.noriepa.fatturapa.xml.header.cessionariocommittente.Sede sede = new  it.noriepa.fatturapa.xml.header.cessionariocommittente.Sede();
+        SedeCessionarioCommittente sede = new SedeCessionarioCommittente();
         sede.setCap("00145");
         sede.setComune("ROMA");
         sede.setComune("RM");

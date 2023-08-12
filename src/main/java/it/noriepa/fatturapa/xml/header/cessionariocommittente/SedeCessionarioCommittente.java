@@ -4,7 +4,7 @@ import it.noriepa.fatturapa.jaxb.IndirizzoType;
 
 import java.util.Optional;
 
-public class Sede {
+public class SedeCessionarioCommittente {
 
     private String indirizzo;
     private Optional<String> numeroCivico;
@@ -13,16 +13,16 @@ public class Sede {
     private Optional<String> provincia;
     private String nazione;
 
-    public Sede(){}
+    public SedeCessionarioCommittente(){}
 
-    public Sede(String indirizzo, String cap, String comune, String nazione) {
+    public SedeCessionarioCommittente(String indirizzo, String cap, String comune, String nazione) {
         this.indirizzo = indirizzo;
         this.cap = cap;
         this.comune = comune;
         this.nazione = nazione;
     }
 
-    public Sede(String indirizzo, Optional<String> numeroCivico, String cap, String comune, Optional<String> provincia, String nazione) {
+    public SedeCessionarioCommittente(String indirizzo, Optional<String> numeroCivico, String cap, String comune, Optional<String> provincia, String nazione) {
         this.indirizzo = indirizzo;
         this.numeroCivico = numeroCivico;
         this.cap = cap;
